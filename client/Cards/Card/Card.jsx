@@ -19,7 +19,7 @@ function NumberCounter({ targetValue, decimals }) {
       } else {
         clearInterval(interval);
       }
-    }, 10);
+    }, 100); // Increase the interval duration to 100 milliseconds
     return () => clearInterval(interval);
   }, [count, targetValue, decimals]);
 
@@ -31,7 +31,7 @@ const Card = ({ targetValue, currencyPair }) => {
 
   return (
     <div className="card">
-      <h1>{currencyPair.replace("USD", "")}</h1>
+      <h1 className="currencyPair">{currencyPair.replace("USD", "")}</h1>
       <div className="count-container">
         <NumberCounter targetValue={targetValue} decimals={decimals} />
       </div>

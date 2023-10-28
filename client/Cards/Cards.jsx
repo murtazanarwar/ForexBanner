@@ -34,12 +34,7 @@ function Cards() {
           flexDirection: "column",
         }}
       >
-        <div>
-          <h1 style={{ color: "white" }}>Exchange Rates</h1>
-        </div>
-        <div>
-          <h4 style={{ color: "white" }}>from USD</h4>
-        </div>
+        <h1 style={{ color: "white" }}>Exchange Rates From USD</h1>
       </div>
       <div className="cards">
         {loading ? (

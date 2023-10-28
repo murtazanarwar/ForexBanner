@@ -15,3 +15,13 @@
 .card:hover {
   transform: scale(0.95);
 }
+
+.currencyPair {
+  transition: color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.currencyPair:hover {
+  color: #d39797;
+  transform: scale(1.1);
+}
